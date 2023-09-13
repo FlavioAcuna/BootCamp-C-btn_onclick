@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="navbar_title">Dojonary</h1>
+      <ul>
+        <li><input type="text" placeholder="Search" /></li>
+      </ul>
+      <button id="login_btn" onclick="changeBtn()">Login</button>
+    </div>
+    <div class="bodyContainer">
+      <div class="main">
+        <div class="profile">
+          <div class="card-body">
+            <div class="card-left">
+              <h1>ninja</h1>
+              <h4>noun</h4>
+              <h6>Plural: ninjas</h6>
+              <button onclick="likeBtn(this)" class="btn_like">13 Likes</button>
+            </div>
+            <div class="card-right">
+              <h5>
+                A practitioner skilled in the <br />
+                <a href="https://es.wikipedia.org/wiki/Jap%C3%B3n">Japanese</a>
+                art of <a href="">ninjutsu</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="profile">
+          <div class="card-body">
+            <div class="card-left">
+              <h1>ninja</h1>
+              <h4>noun</h4>
+              <h6>Plural: ninjas</h6>
+              <button onclick="likeBtn(this)" class="btn_like">37 Likes</button>
+            </div>
+            <div class="card-right">
+              <h5>
+                A <a href="">programmer</a> who breaks <br />
+                down problems with <a href="">zen</a>-like <br />focus
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menucontainer">
+        <div class="connectionRequests">
+          <h3>Dojonary is <br />defined by <strong>YOU</strong></h3>
+          <button onclick="removeBtn(this)" class="side_btn">
+            Add Definition
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
